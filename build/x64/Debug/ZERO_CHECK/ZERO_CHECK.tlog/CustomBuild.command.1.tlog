@@ -1,0 +1,10 @@
+^C:\USERS\김학준\CMAKE_PROJECT_EXAMPLE\BUILD\CMAKEFILES\C0975F67D5C610E6F99DC156EA76082B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/김학준/cmake_project_example -BC:/Users/김학준/cmake_project_example/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/김학준/cmake_project_example/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
